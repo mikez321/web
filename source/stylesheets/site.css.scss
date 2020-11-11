@@ -60,7 +60,7 @@
   border-right: 40px solid transparent;
   border-bottom: 70px solid yellow;
   top: 150px;
-  left: 100px;
+  left: 110px;
   transform: rotate(180deg);
   // animation-name: orange-yellow-s;
   animation-duration: 4s;
@@ -69,15 +69,16 @@
 }
 
 
-#yellow-triangle-right-s {
+#yellow-triangle-back-s {
   width: 0;
   height: 0;
-  margin-top: -59px;
-  margin-left: 93px;
-  border-top: 35px solid transparent;
-  border-left: 60px solid orange;
-  border-bottom: 35px solid transparent;
-  transform: rotate(70deg);
+  position: absolute;
+  top: 160px;
+  left: 108px;
+  border-left: 35px solid transparent;
+  border-right: 35px solid transparent;
+  border-bottom: 60px solid orange;
+  transform: rotate(165deg);
   // animation-name: yellow-orange-s;
   animation-duration: 3s;
   animation-iteration-count: infinite;
@@ -130,16 +131,16 @@
   transform: rotate(15deg);
 }
 
-
-#red-triangle-right-s {
+#red-triangle-back-s {
   width: 0;
   height: 0;
-  margin-top:-66px;
-  margin-left: 23px;
-  border-top: 35px solid transparent;
-  border-left: 60px solid maroon;
-  border-bottom: 35px solid transparent;
-  transform: rotate(10deg);
+  position: absolute;
+  top: 37px;
+  left: 30px;
+  border-left: 40px solid transparent;
+  border-right: 40px solid transparent;
+  border-bottom: 70px solid maroon;
+  transform: rotate(5deg);
   // animation-name: maroon-red;
   animation-duration: 2s;
   animation-iteration-count: infinite;
@@ -182,8 +183,8 @@
   width: 0;
   height: 0;
   position: absolute;
-  top: 110px;
-  left: 25px;
+  top: 120px;
+  left: 35px;
   border-left: 40px solid transparent;
   border-right: 40px solid transparent;
   border-bottom: 70px solid white;
@@ -194,16 +195,16 @@
   animation-timing-function: linear;
 }
 
-
-#gry-triangle-right-s {
+#gry-triangle-back-s {
   width: 0;
   height: 0;
-  margin-top: -60px;
-  margin-left: 0px;
-  border-top: 35px solid transparent;
-  border-left: 60px solid gray;
-  border-bottom: 35px solid transparent;
-  transform: rotate(90deg);
+  position: absolute;
+  top: 100px;
+  left: 45px;
+  border-left: 40px solid transparent;
+  border-right: 40px solid transparent;
+  border-bottom: 70px solid gray;
+  transform: rotate(50deg);
   // animation-name: gray-white;
   animation-duration: 2s;
   animation-iteration-count: infinite;
@@ -229,9 +230,9 @@
 }
 
 @keyframes yellow-orange-s {
-  0% {border-left-color: #ffde59;}
-  50% {border-left-color: #84722a;}
-  100% {border-left-color: #ffde59;}
+  0% {border-bottom-color: #ffde59;}
+  50% {border-bottom-color: #84722a;}
+  100% {border-bottom-color: #ffde59;}
 }
 
 @keyframes red-maroon {
