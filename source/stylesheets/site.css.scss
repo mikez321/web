@@ -6,6 +6,9 @@
   position: absolute;
   left: 60%;
   top: 10%;
+  background-color: black;
+  width: 230px;
+  height: 230px;
 }
 
 #big-spin {
@@ -13,16 +16,19 @@
   animation-duration: 90s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
-  width: 230px;
-  height: 230px;
+  // width: 230px;
+  // height: 230px;
 }
 
 #yellow-triangle-front {
   width: 0;
   height: 0;
-  border-left: 50px solid transparent;
-  border-right: 50px solid transparent;
-  border-bottom: 90px solid yellow;
+  position: absolute;
+  border-left: 60px solid transparent;
+  border-right: 60px solid transparent;
+  border-bottom: 100px solid yellow;
+  left: 0;
+  top: 0;
   transform: rotate(-20deg);
   // animation-name: yellow-orange;
   animation-duration: 2s;
@@ -30,14 +36,16 @@
   animation-timing-function: linear;
 }
 
-#yellow-triangle-down-s {
+#yellow-triangle-front-s {
   width: 0;
   height: 0;
-  border-left: 35px solid transparent;
-  border-right: 35px solid transparent;
-  margin-top: 100px;
-  margin-left: 100px;
-  border-top: 60px solid yellow;
+  position: absolute;
+  border-left: 40px solid transparent;
+  border-right: 40px solid transparent;
+  border-bottom: 70px solid yellow;
+  top: 150px;
+  left: 100px;
+  transform: rotate(180deg);
   // animation-name: orange-yellow-s;
   animation-duration: 4s;
   animation-iteration-count: infinite;
@@ -77,28 +85,27 @@
 #red-triangle-front {
   width: 0;
   height: 0;
-  position: relative;
-  margin-left: 140px;
-  margin-top: -50px;
-  border-left: 50px solid transparent;
-  border-right: 50px solid
-    transparent;
-  border-bottom: 90px solid #f46530;
+  position: absolute;
+  border-left: 60px solid transparent;
+  border-right: 60px solid transparent;
+  border-bottom: 100px solid #f46530;
+  left: 140px;
+  top: 65px;
+  transform: rotate(50deg);
   // animation-name: red-maroon;
   animation-duration: 4s;
   animation-iteration-count: infinite;
-  transform: rotate(40deg);
 }
 
 #red-triangle-front-s {
   width: 0;
   height: 0;
-  margin-left: 30px;
-  margin-top: -100px;
-  border-left: 35px solid transparent;
-  border-right: 35px solid
-    transparent;
-  border-bottom: 60px solid #f46530;
+  position: absolute;
+  left: 35px;
+  top: 45px;
+  border-left: 40px solid transparent;
+  border-right: 40px solid transparent;
+  border-bottom: 70px solid #f46530;
   // animation-name: red-maroon;
   animation-duration: 3s;
   animation-iteration-count: infinite;
@@ -139,12 +146,11 @@
   width: 0;
   height: 0;
   position: relative;
-  margin-top: -80px;
-  margin-left: 105px;
-  border-left: 50px solid transparent;
-  border-right: 50px solid
-    transparent;
-  border-bottom: 90px solid white;
+  top: 10px;
+  left: 110px;
+  border-left: 60px solid transparent;
+  border-right: 60px solid transparent;
+  border-bottom: 100px solid white;
   transform: rotate(180deg);
   // animation-name: white-gray;
   animation-duration: 3s;
@@ -155,12 +161,12 @@
 #gry-triangle-front-s {
   width: 0;
   height: 0;
-  margin-top: -10px;
-  margin-left: 20px;
-  border-left: 35px solid transparent;
-  border-right: 35px solid
-    transparent;
-  border-bottom: 60px solid white;
+  position: absolute;
+  top: 110px;
+  left: 25px;
+  border-left: 40px solid transparent;
+  border-right: 40px solid transparent;
+  border-bottom: 70px solid white;
   transform: rotate(20deg);
   // animation-name: white-gray;
   animation-duration: 1s;
