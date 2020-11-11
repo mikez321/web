@@ -17,7 +17,13 @@
   <div id='red-triangle-front-s'></div>
 </div>
 <section id='links'>
-  <%= image_tag 'iconfinder_Github_381376.png', :id => 'connect-link' %>
-  <%= image_tag 'iconfinder_112-gmail_email_mail_4202011.png', :id => 'connect-link' %>
-  <%= image_tag 'iconfinder_linkedin_square_gray_107090.png', :id => 'connect-link' %>
+  <% link_to 'https://github.com/mikez321' do %>
+    <%= image_tag 'iconfinder_Github_381376.png', :id => 'connect-link' %>
+  <% end %>
+  <% link_to 'https://www.linkedin.com/in/mikez321/' do %>
+    <%= image_tag 'iconfinder_linkedin_square_gray_107090.png', :id => 'connect-link' %>
+  <% end %>
+  <a href="mailto:hernandezmichael321@gmail.com">
+    <%= image_tag 'iconfinder_112-gmail_email_mail_4202011.png', :id => 'connect-link' %>
+  </a>
 </section>
