@@ -5,19 +5,26 @@
 .centered {
   position: absolute;
   left: 60%;
-  top: 10%;
+  top: 15%;
   // background-color: black;
-  width: 230px;
-  height: 230px;
+  width: 275px;
+  height: 225px;
+}
+
+#name {
+  position: absolute;
+  left: 25%;
+  top: 30%;
+  font-size: 48px;
+  color: #d4def4;
+  font-family: 'Nixie One', cursive;
 }
 
 #big-spin {
-  animation: rotate-20s;
-  animation-duration: 90s;
+  animation: rotate;
+  animation-duration: 50s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
-  // width: 230px;
-  // height: 230px;
 }
 
 #yellow-triangle-front {
@@ -259,6 +266,6 @@
   100% {border-bottom-color: #8d9fa4;}
 }
 
-@keyframes rotate-20s {
+@keyframes rotate {
   100% {transform: rotate(360deg);}
 }
