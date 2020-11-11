@@ -6,7 +6,7 @@
   position: absolute;
   left: 60%;
   top: 10%;
-  background-color: black;
+  // background-color: black;
   width: 230px;
   height: 230px;
 }
@@ -36,6 +36,22 @@
   animation-timing-function: linear;
 }
 
+#yellow-triangle-back {
+  width: 0;
+  height: 0;
+  position: absolute;
+  top: -7px;
+  left: 12px;
+  border-left: 60px solid transparent;
+  border-right: 60px solid transparent;
+  border-bottom: 100px solid orange;
+  transform: rotate(-35deg);
+  // animation-name: orange-yellow;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
 #yellow-triangle-front-s {
   width: 0;
   height: 0;
@@ -52,20 +68,6 @@
   animation-timing-function: linear;
 }
 
-#yellow-triangle-right {
-  width: 0;
-  height: 0;
-  margin-top:-48px;
-  margin-left: 22px;
-  border-top: 50px solid transparent;
-  border-left: 90px solid orange;
-  border-bottom: 50px solid transparent;
-  transform: rotate(50deg);
-  // animation-name: orange-yellow;
-  animation-duration: 3s;
-  animation-iteration-count: infinite;
-  animation-timing-function: linear;
-}
 
 #yellow-triangle-right-s {
   width: 0;
@@ -146,7 +148,7 @@
   width: 0;
   height: 0;
   position: relative;
-  top: 10px;
+  top: 5px;
   left: 110px;
   border-left: 60px solid transparent;
   border-right: 60px solid transparent;
@@ -211,15 +213,15 @@
 }
 
 @keyframes orange-yellow {
-  0% {border-left-color: #84722a;}
-  50% {border-left-color: #ffde59;}
-  100% {border-left-color: #84722a;}
+  0% {border-bottom-color: #84722a;}
+  50% {border-bottom-color: #ffde59;}
+  100% {border-bottom-color: #84722a;}
 }
 
 @keyframes orange-yellow-s {
-  0% {border-top-color: #84722a;}
-  50% {border-top-color: #ffde59;}
-  100% {border-top-color: #84722a;}
+  0% {border-bottom-color: #84722a;}
+  50% {border-bottom-color: #ffde59;}
+  100% {border-bottom-color: #84722a;}
 }
 
 @keyframes yellow-orange-s {
