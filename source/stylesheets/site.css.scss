@@ -1,0 +1,253 @@
+#bg {
+  background-color: #2a2e30;
+}
+
+.centered {
+  position: fixed;
+  left: 60%;
+  top: 10%;
+}
+
+#big-spin {
+  animation: rotate-20s;
+  animation-duration: 90s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  width: 230px;
+  height: 230px;
+}
+
+#yellow-triangle-up {
+  width: 0;
+  height: 0;
+  border-left: 30px solid transparent;
+  border-right: 50px solid transparent;
+  border-bottom: 90px solid yellow;
+  animation-name: yellow-orange;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+#yellow-triangle-down-s {
+  width: 0;
+  height: 0;
+  border-left: 35px solid transparent;
+  border-right: 35px solid transparent;
+  margin-top: 100px;
+  margin-left: 100px;
+  border-top: 60px solid yellow;
+  animation-name: orange-yellow-s;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+#yellow-triangle-right {
+  width: 0;
+  height: 0;
+  margin-top:-48px;
+  margin-left: 22px;
+  border-top: 50px solid transparent;
+  border-left: 90px solid orange;
+  border-bottom: 50px solid transparent;
+  transform: rotate(50deg);
+  animation-name: orange-yellow;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+#yellow-triangle-right-s {
+  width: 0;
+  height: 0;
+  margin-top: -59px;
+  margin-left: 93px;
+  border-top: 35px solid transparent;
+  border-left: 60px solid orange;
+  border-bottom: 35px solid transparent;
+  transform: rotate(70deg);
+  animation-name: yellow-orange-s;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+#red-triangle-up {
+  width: 0;
+  height: 0;
+  margin-left: 150px;
+  margin-top: -60px;
+  border-left: 50px solid transparent;
+  border-right: 50px solid
+    transparent;
+  border-bottom: 90px solid #f46530;
+  animation-name: red-maroon;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  transform: rotate(60deg);
+}
+
+#red-triangle-up-s {
+  width: 0;
+  height: 0;
+  margin-left: 20px;
+  margin-top: -130px;
+  border-left: 35px solid transparent;
+  border-right: 35px solid
+    transparent;
+  border-bottom: 60px solid #f46530;
+  animation-name: red-maroon;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  transform: rotate(5deg);
+}
+
+#red-triangle-right {
+  width: 0;
+  height: 0;
+  margin-top:-58px;
+  margin-left: 162px;
+  border-top: 50px solid transparent;
+  border-left: 90px solid maroon;
+  border-bottom: 50px solid transparent;
+  transform: rotate(70deg);
+  animation-name: maroon-red;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+#red-triangle-right-s {
+  width: 0;
+  height: 0;
+  margin-top:-66px;
+  margin-left: 23px;
+  border-top: 35px solid transparent;
+  border-left: 60px solid maroon;
+  border-bottom: 35px solid transparent;
+  transform: rotate(10deg);
+  animation-name: maroon-red;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+#gry-triangle-up {
+  width: 0;
+  height: 0;
+  margin-top: -120px;
+  margin-left: 105px;
+  border-left: 50px solid transparent;
+  border-right: 50px solid
+    transparent;
+  border-bottom: 90px solid white;
+  transform: rotate(160deg);
+  animation-name: white-gray;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+#gry-triangle-up-s {
+  width: 0;
+  height: 0;
+  margin-top: -120px;
+  margin-left: 25px;
+  border-left: 35px solid transparent;
+  border-right: 35px solid
+    transparent;
+  border-bottom: 60px solid white;
+  transform: rotate(90deg);
+  animation-name: white-gray;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+#gry-triangle-right {
+  width: 0;
+  height: 0;
+  margin-top: -190px;
+  margin-left: 130px;
+  border-top: 50px solid transparent;
+  border-left: 90px solid gray;
+  border-bottom: 50px solid transparent;
+  transform: rotate(50deg);
+  animation-name: gray-white;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+#gry-triangle-right-s {
+  width: 0;
+  height: 0;
+  margin-top: -60px;
+  margin-left: 0px;
+  border-top: 35px solid transparent;
+  border-left: 60px solid gray;
+  border-bottom: 35px solid transparent;
+  transform: rotate(90deg);
+  animation-name: gray-white;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes yellow-orange {
+  0% {border-bottom-color: #ffde59;}
+  50% {border-bottom-color: #84722a;}
+  100% {border-bottom-color: #ffde59;}
+}
+
+@keyframes orange-yellow {
+  0% {border-left-color: #84722a;}
+  50% {border-left-color: #ffde59;}
+  100% {border-left-color: #84722a;}
+}
+
+@keyframes orange-yellow-s {
+  0% {border-top-color: #84722a;}
+  50% {border-top-color: #ffde59;}
+  100% {border-top-color: #84722a;}
+}
+
+@keyframes yellow-orange-s {
+  0% {border-left-color: #ffde59;}
+  50% {border-left-color: #84722a;}
+  100% {border-left-color: #ffde59;}
+}
+
+@keyframes red-maroon {
+  0% {border-bottom-color: #f46530;}
+  50% {border-bottom-color: #6b2d16;}
+  100% {border-bottom-color: #f46530;}
+}
+
+@keyframes maroon-red {
+  0% {border-left-color: #6b2d16;}
+  50% {border-left-color: #f46530;}
+  100% {border-left-color: #6b2d16;}
+}
+
+@keyframes white-gray {
+  0% {border-bottom-color: #d4def4;}
+  50% {border-bottom-color: #8d9fa4;}
+  100% {border-bottom-color: #d4def4;}
+}
+
+@keyframes gray-white {
+  0% {border-left-color: #8d9fa4;}
+  50% {border-left-color: #d4def4;}
+  100% {border-left-color: #8d9fa4;}
+}
+
+@keyframes rotate-20s {
+  100% {transform: rotate(360deg);}
+}
+
+@keyframes rotate-ind {
+  50% {transform: rotate(-60deg);}
+  100% {transform: rotate(0deg);}
+}
