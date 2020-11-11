@@ -15,9 +15,34 @@
   position: absolute;
   left: 25%;
   top: 30%;
-  font-size: 48px;
+  font-size: 52px;
   color: #d4def4;
-  font-family: 'Nixie One', cursive;
+  font-family: 'Lato', sans-serif;
+}
+
+#underline {
+  position: absolute;
+  width: 130%;
+  height: 3px;
+  top: 100px;
+  background-color: #f46530
+}
+
+#links {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  left: 25%;
+  top: 80%;
+  margin: auto;
+  width: 15%;
+}
+
+#connect-link {
+  top: 70%;
+  max-width: 30px;
+  height: auto;
+  filter: brightness(60%);
 }
 
 #big-spin {
