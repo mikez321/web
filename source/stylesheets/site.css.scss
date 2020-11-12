@@ -12,7 +12,7 @@
   position: relative;
   flex-wrap: wrap-reverse;
   margin-left: 25%;
-  margin-top: 10%;
+  margin-top: 5%;
   width: 275px;
   height: 225px;
 }
@@ -23,7 +23,7 @@
   flex-wrap: wrap;
   width: 450px;
   left: 20%;
-  margin-top: 15%;
+  margin-top: 10%;
   font-size: 52px;
   color: #d4def4;
   font-family: 'Lato', sans-serif;
@@ -41,7 +41,7 @@
   display: flex;
   justify-content: space-between;
   left: 20%;
-  top: 80%;
+  top: 65%;
   margin: auto;
   width: 15%;
 }
@@ -51,6 +51,16 @@
   max-width: 30px;
   height: auto;
   filter: brightness(60%);
+}
+
+#bottom {
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  bottom: 0px;
+  font-size: 12px;
+  color: #d4def4;
+  font-family: 'Lato', sans-serif;
 }
 
 #big-spin {
