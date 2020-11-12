@@ -70,8 +70,7 @@
   left: 0;
   top: 0;
   transform: rotate(-25deg);
-  animation-name: yellow-orange;
-  animation-duration: 2s;
+  animation: yellow-orange 2s, spin-forward 9s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
 }
@@ -86,8 +85,7 @@
   border-right: 60px solid transparent;
   border-bottom: 100px solid orange;
   transform: rotate(-38deg);
-  animation-name: orange-yellow;
-  animation-duration: 3s;
+  animation: orange-yellow 3s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
 }
@@ -102,8 +100,7 @@
   top: 160px;
   left: 115px;
   transform: rotate(180deg);
-  animation-name: orange-yellow-s;
-  animation-duration: 4s;
+  animation: orange-yellow-s 4s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
 }
@@ -119,8 +116,7 @@
   border-right: 35px solid transparent;
   border-bottom: 60px solid orange;
   transform: rotate(165deg);
-  animation-name: yellow-orange-s;
-  animation-duration: 3s;
+  animation: yellow-orange-s 3s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
 }
@@ -135,8 +131,7 @@
   left: 155px;
   top: 65px;
   transform: rotate(50deg);
-  animation-name: red-maroon;
-  animation-duration: 4s;
+  animation: red-maroon 4s;
   animation-iteration-count: infinite;
 }
 
@@ -150,8 +145,7 @@
   border-right: 60px solid transparent;
   border-bottom: 100px solid maroon;
   transform: rotate(40deg);
-  animation-name: maroon-red;
-  animation-duration: 4s;
+  animation: maroon-red 4s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
 }
@@ -165,8 +159,7 @@
   border-left: 40px solid transparent;
   border-right: 40px solid transparent;
   border-bottom: 70px solid #f46530;
-  animation-name: red-maroon;
-  animation-duration: 3s;
+  animation: red-maroon 3s;
   animation-iteration-count: infinite;
   transform: rotate(15deg);
 }
@@ -181,8 +174,7 @@
   border-right: 40px solid transparent;
   border-bottom: 70px solid maroon;
   transform: rotate(5deg);
-  animation-name: maroon-red;
-  animation-duration: 2s;
+  animation: maroon-red 2s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
 }
@@ -197,8 +189,7 @@
   border-right: 60px solid transparent;
   border-bottom: 100px solid white;
   transform: rotate(180deg);
-  animation-name: white-gray;
-  animation-duration: 3s;
+  animation: white-gray 3s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
 }
@@ -213,8 +204,7 @@
   border-right: 60px solid transparent;
   border-bottom: 100px solid gray;
   transform: rotate(-25deg);
-  animation-name: gray-white;
-  animation-duration: 2s;
+  animation: gray-white 2s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
 }
@@ -229,8 +219,7 @@
   border-right: 40px solid transparent;
   border-bottom: 70px solid white;
   transform: rotate(20deg);
-  animation-name: white-gray;
-  animation-duration: 1s;
+  animation: white-gray 1s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
 }
@@ -245,8 +234,7 @@
   border-right: 40px solid transparent;
   border-bottom: 70px solid gray;
   transform: rotate(50deg);
-  animation-name: gray-white;
-  animation-duration: 2s;
+  animation: gray-white 2s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
 }
