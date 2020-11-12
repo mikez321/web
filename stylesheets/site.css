@@ -1,0 +1,424 @@
+#bg {
+  background-color: #2a2e30; }
+
+.centered {
+  position: absolute;
+  left: 60%;
+  top: 15%;
+  width: 275px;
+  height: 225px; }
+
+#name {
+  position: absolute;
+  left: 25%;
+  top: 30%;
+  font-size: 52px;
+  color: #d4def4;
+  font-family: 'Lato', sans-serif; }
+
+#underline {
+  position: absolute;
+  width: 130%;
+  height: 3px;
+  top: 100px;
+  background-color: #f46530; }
+
+#links {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  left: 25%;
+  top: 80%;
+  margin: auto;
+  width: 15%; }
+
+#connect-link {
+  top: 70%;
+  max-width: 30px;
+  height: auto;
+  -webkit-filter: brightness(60%);
+          filter: brightness(60%); }
+
+#big-spin {
+  -webkit-animation: rotate;
+          animation: rotate;
+  -webkit-animation-duration: 50s;
+          animation-duration: 50s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear; }
+
+#yellow-triangle-front {
+  width: 0;
+  height: 0;
+  position: absolute;
+  border-left: 60px solid transparent;
+  border-right: 60px solid transparent;
+  border-bottom: 100px solid yellow;
+  left: 0;
+  top: 0;
+  -webkit-transform: rotate(-20deg);
+          transform: rotate(-20deg);
+  -webkit-animation-name: yellow-orange;
+          animation-name: yellow-orange;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear; }
+
+#yellow-triangle-back {
+  width: 0;
+  height: 0;
+  position: absolute;
+  top: -7px;
+  left: 12px;
+  border-left: 60px solid transparent;
+  border-right: 60px solid transparent;
+  border-bottom: 100px solid orange;
+  -webkit-transform: rotate(-35deg);
+          transform: rotate(-35deg);
+  -webkit-animation-name: orange-yellow;
+          animation-name: orange-yellow;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear; }
+
+#yellow-triangle-front-s {
+  width: 0;
+  height: 0;
+  position: absolute;
+  border-left: 40px solid transparent;
+  border-right: 40px solid transparent;
+  border-bottom: 70px solid yellow;
+  top: 150px;
+  left: 115px;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  -webkit-animation-name: orange-yellow-s;
+          animation-name: orange-yellow-s;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear; }
+
+#yellow-triangle-back-s {
+  width: 0;
+  height: 0;
+  position: absolute;
+  top: 160px;
+  left: 113px;
+  border-left: 35px solid transparent;
+  border-right: 35px solid transparent;
+  border-bottom: 60px solid orange;
+  -webkit-transform: rotate(165deg);
+          transform: rotate(165deg);
+  -webkit-animation-name: yellow-orange-s;
+          animation-name: yellow-orange-s;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear; }
+
+#red-triangle-front {
+  width: 0;
+  height: 0;
+  position: absolute;
+  border-left: 60px solid transparent;
+  border-right: 60px solid transparent;
+  border-bottom: 100px solid #f46530;
+  left: 155px;
+  top: 65px;
+  -webkit-transform: rotate(50deg);
+          transform: rotate(50deg);
+  -webkit-animation-name: red-maroon;
+          animation-name: red-maroon;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite; }
+
+#red-triangle-back {
+  width: 0;
+  height: 0;
+  position: absolute;
+  top: 70px;
+  left: 161px;
+  border-left: 60px solid transparent;
+  border-right: 60px solid transparent;
+  border-bottom: 100px solid maroon;
+  -webkit-transform: rotate(40deg);
+          transform: rotate(40deg);
+  -webkit-animation-name: maroon-red;
+          animation-name: maroon-red;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear; }
+
+#red-triangle-front-s {
+  width: 0;
+  height: 0;
+  position: absolute;
+  left: 40px;
+  top: 45px;
+  border-left: 40px solid transparent;
+  border-right: 40px solid transparent;
+  border-bottom: 70px solid #f46530;
+  -webkit-animation-name: red-maroon;
+          animation-name: red-maroon;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-transform: rotate(15deg);
+          transform: rotate(15deg); }
+
+#red-triangle-back-s {
+  width: 0;
+  height: 0;
+  position: absolute;
+  top: 37px;
+  left: 35px;
+  border-left: 40px solid transparent;
+  border-right: 40px solid transparent;
+  border-bottom: 70px solid maroon;
+  -webkit-transform: rotate(5deg);
+          transform: rotate(5deg);
+  -webkit-animation-name: maroon-red;
+          animation-name: maroon-red;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear; }
+
+#gry-triangle-front {
+  width: 0;
+  height: 0;
+  position: relative;
+  top: 0px;
+  left: 125px;
+  border-left: 60px solid transparent;
+  border-right: 60px solid transparent;
+  border-bottom: 100px solid white;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  -webkit-animation-name: white-gray;
+          animation-name: white-gray;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear; }
+
+#gry-triangle-back {
+  width: 0;
+  height: 0;
+  position: absolute;
+  top: 5px;
+  left: 110px;
+  border-left: 60px solid transparent;
+  border-right: 60px solid transparent;
+  border-bottom: 100px solid gray;
+  -webkit-transform: rotate(-25deg);
+          transform: rotate(-25deg);
+  -webkit-animation-name: gray-white;
+          animation-name: gray-white;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear; }
+
+#gry-triangle-front-s {
+  width: 0;
+  height: 0;
+  position: absolute;
+  top: 120px;
+  left: 40px;
+  border-left: 40px solid transparent;
+  border-right: 40px solid transparent;
+  border-bottom: 70px solid white;
+  -webkit-transform: rotate(20deg);
+          transform: rotate(20deg);
+  -webkit-animation-name: white-gray;
+          animation-name: white-gray;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear; }
+
+#gry-triangle-back-s {
+  width: 0;
+  height: 0;
+  position: absolute;
+  top: 100px;
+  left: 50px;
+  border-left: 40px solid transparent;
+  border-right: 40px solid transparent;
+  border-bottom: 70px solid gray;
+  -webkit-transform: rotate(50deg);
+          transform: rotate(50deg);
+  -webkit-animation-name: gray-white;
+          animation-name: gray-white;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear; }
+
+@-webkit-keyframes yellow-orange {
+  0% {
+    border-bottom-color: #ffde59; }
+  50% {
+    border-bottom-color: #84722a; }
+  100% {
+    border-bottom-color: #ffde59; } }
+
+@keyframes yellow-orange {
+  0% {
+    border-bottom-color: #ffde59; }
+  50% {
+    border-bottom-color: #84722a; }
+  100% {
+    border-bottom-color: #ffde59; } }
+
+@-webkit-keyframes orange-yellow {
+  0% {
+    border-bottom-color: #84722a; }
+  50% {
+    border-bottom-color: #ffde59; }
+  100% {
+    border-bottom-color: #84722a; } }
+
+@keyframes orange-yellow {
+  0% {
+    border-bottom-color: #84722a; }
+  50% {
+    border-bottom-color: #ffde59; }
+  100% {
+    border-bottom-color: #84722a; } }
+
+@-webkit-keyframes orange-yellow-s {
+  0% {
+    border-bottom-color: #84722a; }
+  50% {
+    border-bottom-color: #ffde59; }
+  100% {
+    border-bottom-color: #84722a; } }
+
+@keyframes orange-yellow-s {
+  0% {
+    border-bottom-color: #84722a; }
+  50% {
+    border-bottom-color: #ffde59; }
+  100% {
+    border-bottom-color: #84722a; } }
+
+@-webkit-keyframes yellow-orange-s {
+  0% {
+    border-bottom-color: #ffde59; }
+  50% {
+    border-bottom-color: #84722a; }
+  100% {
+    border-bottom-color: #ffde59; } }
+
+@keyframes yellow-orange-s {
+  0% {
+    border-bottom-color: #ffde59; }
+  50% {
+    border-bottom-color: #84722a; }
+  100% {
+    border-bottom-color: #ffde59; } }
+
+@-webkit-keyframes red-maroon {
+  0% {
+    border-bottom-color: #f46530; }
+  50% {
+    border-bottom-color: #6b2d16; }
+  100% {
+    border-bottom-color: #f46530; } }
+
+@keyframes red-maroon {
+  0% {
+    border-bottom-color: #f46530; }
+  50% {
+    border-bottom-color: #6b2d16; }
+  100% {
+    border-bottom-color: #f46530; } }
+
+@-webkit-keyframes maroon-red {
+  0% {
+    border-bottom-color: #6b2d16; }
+  50% {
+    border-bottom-color: #f46530; }
+  100% {
+    border-bottom-color: #6b2d16; } }
+
+@keyframes maroon-red {
+  0% {
+    border-bottom-color: #6b2d16; }
+  50% {
+    border-bottom-color: #f46530; }
+  100% {
+    border-bottom-color: #6b2d16; } }
+
+@-webkit-keyframes white-gray {
+  0% {
+    border-bottom-color: #d4def4; }
+  50% {
+    border-bottom-color: #8d9fa4; }
+  100% {
+    border-bottom-color: #d4def4; } }
+
+@keyframes white-gray {
+  0% {
+    border-bottom-color: #d4def4; }
+  50% {
+    border-bottom-color: #8d9fa4; }
+  100% {
+    border-bottom-color: #d4def4; } }
+
+@-webkit-keyframes gray-white {
+  0% {
+    border-bottom-color: #8d9fa4; }
+  50% {
+    border-bottom-color: #d4def4; }
+  100% {
+    border-bottom-color: #8d9fa4; } }
+
+@keyframes gray-white {
+  0% {
+    border-bottom-color: #8d9fa4; }
+  50% {
+    border-bottom-color: #d4def4; }
+  100% {
+    border-bottom-color: #8d9fa4; } }
+
+@-webkit-keyframes rotate {
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg); } }
+
+@keyframes rotate {
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg); } }
