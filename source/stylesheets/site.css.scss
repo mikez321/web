@@ -2,29 +2,37 @@
   background-color: #2a2e30;
 }
 
+#container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .centered {
-  position: absolute;
-  left: 60%;
-  top: 15%;
-  // background-color: black;
+  display: flex;
+  position: relative;
+  flex-wrap: wrap-reverse;
+  margin-left: 25%;
+  margin-top: 10%;
   width: 275px;
   height: 225px;
 }
 
 #name {
-  position: absolute;
-  left: 25%;
-  top: 30%;
+  display: inline-flex;
+  position: relative;
+  flex-wrap: wrap;
+  width: 450px;
+  left: 20%;
+  margin-top: 15%;
   font-size: 52px;
   color: #d4def4;
   font-family: 'Lato', sans-serif;
 }
 
 #underline {
-  position: absolute;
-  width: 130%;
+  position: relative;
+  width: 100%;
   height: 3px;
-  top: 100px;
   background-color: #f46530
 }
 
@@ -32,7 +40,7 @@
   position: absolute;
   display: flex;
   justify-content: space-between;
-  left: 25%;
+  left: 20%;
   top: 80%;
   margin: auto;
   width: 15%;
@@ -47,7 +55,7 @@
 
 #big-spin {
   animation: rotate;
-  animation-duration: 50s;
+  animation-duration: 70s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
 }
@@ -61,7 +69,7 @@
   border-bottom: 100px solid yellow;
   left: 0;
   top: 0;
-  transform: rotate(-20deg);
+  transform: rotate(-25deg);
   animation-name: yellow-orange;
   animation-duration: 2s;
   animation-iteration-count: infinite;
@@ -73,11 +81,11 @@
   height: 0;
   position: absolute;
   top: -7px;
-  left: 12px;
+  left: 10px;
   border-left: 60px solid transparent;
   border-right: 60px solid transparent;
   border-bottom: 100px solid orange;
-  transform: rotate(-35deg);
+  transform: rotate(-38deg);
   animation-name: orange-yellow;
   animation-duration: 3s;
   animation-iteration-count: infinite;
@@ -91,7 +99,7 @@
   border-left: 40px solid transparent;
   border-right: 40px solid transparent;
   border-bottom: 70px solid yellow;
-  top: 150px;
+  top: 160px;
   left: 115px;
   transform: rotate(180deg);
   animation-name: orange-yellow-s;
@@ -105,7 +113,7 @@
   width: 0;
   height: 0;
   position: absolute;
-  top: 160px;
+  top: 170px;
   left: 113px;
   border-left: 35px solid transparent;
   border-right: 35px solid transparent;
@@ -183,7 +191,7 @@
   width: 0;
   height: 0;
   position: relative;
-  top: 0px;
+  top: -125px;
   left: 125px;
   border-left: 60px solid transparent;
   border-right: 60px solid transparent;
@@ -216,7 +224,7 @@
   height: 0;
   position: absolute;
   top: 120px;
-  left: 40px;
+  left: 45px;
   border-left: 40px solid transparent;
   border-right: 40px solid transparent;
   border-bottom: 70px solid white;
@@ -232,7 +240,7 @@
   height: 0;
   position: absolute;
   top: 100px;
-  left: 50px;
+  left: 55px;
   border-left: 40px solid transparent;
   border-right: 40px solid transparent;
   border-bottom: 70px solid gray;
