@@ -92,7 +92,7 @@
   left: 0;
   top: 0;
   transform: rotate(-25deg);
-  animation: yellow-orange 2s, spin-forward 9s;
+  animation: yellow-orange 2s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
 }
@@ -122,7 +122,7 @@
   top: 160px;
   left: 115px;
   transform: rotate(180deg);
-  animation: orange-yellow-s 4.3s;
+  animation: orange-yellow 4.3s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
 }
@@ -138,7 +138,7 @@
   border-right: 35px solid transparent;
   border-bottom: 60px solid orange;
   transform: rotate(165deg);
-  animation: yellow-orange-s 3.2s;
+  animation: yellow-orange 3.2s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
 }
@@ -275,22 +275,6 @@
   50% {border-bottom-color: gray;}
   51% {border-bottom-color: #ffde59;}
   100% {border-bottom-color: #84722a;}
-}
-
-@keyframes orange-yellow-s {
-  0% {border-bottom-color: #84722a;}
-  49% {border-bottom-color: #ffde59;}
-  50% {border-bottom-color: gray;}
-  51% {border-bottom-color: #ffde59;}
-  100% {border-bottom-color: #84722a;}
-}
-
-@keyframes yellow-orange-s {
-  0% {border-bottom-color: #ffde59;}
-  49% {border-bottom-color: #84722a;}
-  50% {border-bottom-color: gray;}
-  51% {border-bottom-color: #84722a;}
-  100% {border-bottom-color: #ffde59;}
 }
 
 @keyframes red-maroon {
