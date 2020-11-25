@@ -318,3 +318,31 @@
 @keyframes rotate {
   100% {transform: rotate(360deg);}
 }
+
+.info-page {
+  padding: 10%;
+  font-size: 28px;
+  color: #d4def4;
+  font-family: 'Lato', sans-serif;
+  // background-color: lightblue;
+}
+
+.logo-container {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  // background-color: pink;
+}
+
+.logo {
+  filter: invert(100%);
+  -webkit-filter: invert(100%);
+  margin-bottom: 3em;
+}
+
+.page-info {
+  text-align: center;
+  display: block;
+  margin-top: 3em;
+  // background-color: lime;
+}
