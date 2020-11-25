@@ -319,11 +319,12 @@
   100% {transform: rotate(360deg);}
 }
 
-.info-page {
+.tech-info {
   padding: 10%;
   font-size: 28px;
   color: #d4def4;
   font-family: 'Lato', sans-serif;
+  margin-bottom: 3em;
   // background-color: lightblue;
 }
 
@@ -337,12 +338,12 @@
 .logo {
   filter: invert(100%);
   -webkit-filter: invert(100%);
-  margin-bottom: 3em;
+  margin-bottom: 2em;
 }
 
 .page-info {
   text-align: center;
   display: block;
-  margin-top: 3em;
+  margin-top: 2em;
   // background-color: lime;
 }

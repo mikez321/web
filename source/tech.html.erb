@@ -5,13 +5,14 @@
         and design.  My Ruby code is tested with RSpec and Minitest."
 } %>
 <% tech.each do |item| %>
-  <div class="info-page">
+<section id=<%= item.first %>>
+  <div class="tech-info">
     <div class="logo-container">
       <%= image_tag "https://simpleicons.org/icons/#{item.first}.svg", :class => 'logo' %>
     </div>
     <div class="page-info">
       <%= item.last %>
     </div>
-    </div>
   </div>
+</section>
 <% end %>
