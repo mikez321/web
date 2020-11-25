@@ -1,0 +1,17 @@
+<% tech = {
+  'python' => "I'm a Python developer at ReRent where we're reimagining homesharing.
+        I write raw Python code, and am proficent in Django and Flask.",
+  'ruby' => "I learned OOP and TDD using Ruby at the Turing School of Software
+        and design.  My Ruby code is tested with RSpec and Minitest."
+} %>
+<% tech.each do |item| %>
+  <div class="info-page">
+    <div class="logo-container">
+      <%= image_tag "https://simpleicons.org/icons/#{item.first}.svg", :class => 'logo' %>
+    </div>
+    <div class="page-info">
+      <%= item.last %>
+    </div>
+    </div>
+  </div>
+<% end %>
