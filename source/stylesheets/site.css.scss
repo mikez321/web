@@ -77,12 +77,19 @@
 }
 
 .triangle-container {
-  z-index: -1;
   position: absolute;
-  top: 5%;
-  left: 60%;
-  width: 70%;
-  height: 70%;
+  z-index: -1;
+  top: -5em;
+  left: 40%;
   margin: 3em;
-  background-color: pink;
+  // background-color: yellow;
+}
+
+.triangle-top {
+  width: 0;
+  height: 0;
+  border-left: 250px solid transparent;
+  border-right: 450px solid transparent;
+  border-bottom: 400px solid darkorange;
+  transform: rotate(23deg);
 }
