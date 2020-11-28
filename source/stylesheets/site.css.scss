@@ -5,7 +5,10 @@
 #links {
   display: flex;
   justify-content: space-between;
-  width: 60%;
+  margin-top: 4em;
+  width: 75%;
+  font-size: 20px;
+  // background-color: lime;
 }
 
 #connect-link {
@@ -73,33 +76,13 @@
   // background-color: aqua;
 }
 
-.triangle {
+.triangle-container {
+  z-index: -1;
   position: absolute;
-  display: flex;
   top: 5%;
-  left: 45%;
-  max-width: 300px;
-  max-height: 300px;
+  left: 60%;
+  width: 70%;
+  height: 70%;
+  margin: 3em;
   background-color: pink;
-}
-
-.triangle-top {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  transform: rotate(34deg);
-  border-left: 15em solid transparent;
-  border-right: 30em solid transparent;
-  border-bottom: 25em solid darkgray;
-}
-
-.triangle-btm {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  left: 3em;
-  transform: rotate(20deg);
-  border-left: 15em solid transparent;
-  border-right: 30em solid transparent;
-  border-bottom: 25em solid #d4def4;
 }
