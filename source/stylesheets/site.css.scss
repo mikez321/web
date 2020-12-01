@@ -1,5 +1,17 @@
+:root {
+  --background: #2a2e30;
+  --light-text: #d4def4;
+  --dark-yellow: #84722A;
+  --light-yellow: #FFDE59;
+  --dark-gray: #8D9FA4;
+  --light-gray: #D4EDF4;
+  --dark-red: #6B2D16;
+  --light-red: #F46530;
+  --light-green: #7ED975;
+}
+
 #bg {
-  background-color: #2a2e30;
+  background-color: var(--background);
 }
 
 
@@ -29,8 +41,8 @@
 
 .info-container {
   padding: 10%;
-  font-size: 28px;
-  color: #d4def4;
+  font-size: 24px;
+  color: var(--light-text);
   font-family: 'Lato', sans-serif;
   // background-color: lightblue;
 }
@@ -63,7 +75,7 @@
 
 .title {
   font-size:24px;
-  color:#F46530;
+  color: var(--light-yellow);
   animation: title-color 18s;
   animation-iteration-count: infinite;
   transition-timing-function: ease-out;
@@ -73,7 +85,7 @@
   z-index: -1;
 	position: absolute;
   display: flex;
-	width: 50%;
+	width: 40%;
 	padding-bottom: 50%;
 	vertical-align: middle;
 	overflow: hidden;
@@ -103,46 +115,32 @@
   transition-timing-function: ease-out;
 }
 
-// @keyframes top-shine {
-//   0% {fill: #9c1700;}
-//   20% {fill: #611306;}
-//   60% {fill: #9c1700;}
-//   100% {fill: #9c1700}
-// }
-//
-// @keyframes bottom-shine {
-//   0% {fill: #5e1c10;}
-//   20% {fill: #8f220e;}
-//   60% {fill: #5e1c10;}
-//   100% {fill: #5e1c10}
-// }
-
 @keyframes top-shine {
-  0% {fill: #84722A;}
-  30% {fill: #84722A}
-  33% {fill: #D4EDF4;}
-  63% {fill: #D4EDF4;}
-  66% {fill: #F46530;}
-  96% {fill: #F46530;}
-  100% {fill: #84722A;}
+  0% {fill: var(--dark-yellow);}
+  30% {fill: var(--dark-yellow);}
+  33% {fill: var(--light-gray);}
+  63% {fill: var(--light-gray);}
+  66% {fill: var(--light-red);}
+  96% {fill: var(--light-red);}
+  100% {fill: var(--dark-yellow);}
 }
 
 @keyframes bottom-shine {
-  0% {fill: #FFDE59;}
-  29% {fill: #FFDE59;}
-  32% {fill: #8D9FA4;}
-  62% {fill: #8D9FA4;}
-  65% {fill: #6B2D16;}
-  95% {fill: #6B2D16;}
-  100% {fill: #FFDE59;}
+  0% {fill: var(--light-yellow);}
+  29% {fill: var(--light-yellow);}
+  32% {fill: var(--dark-gray);}
+  62% {fill: var(--dark-gray);}
+  65% {fill: var(--dark-red);}
+  95% {fill: var(--dark-red);}
+  100% {fill: var(--light-yellow);}
 }
 
 @keyframes title-color {
-  0% {color: #7ED975;}
-  30% {color: #7ED975}
-  33% {color: #F46530;}
-  63% {color: #F46530;}
-  66% {color: #FFDE59;}
-  96% {color: #FFDE59;}
-  100% {color: #7ED975;}
+  0% {color: var(--light-green);}
+  30% {color: var(--light-green)}
+  33% {color: var(--light-red);}
+  63% {color: var(--light-red);}
+  66% {color: var(--light-yellow);}
+  96% {color: var(--light-yellow);}
+  100% {color: var(--light-green);}
 }
