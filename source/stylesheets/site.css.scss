@@ -2,11 +2,14 @@
   background-color: #2a2e30;
 }
 
+
 #links {
   display: flex;
   justify-content: space-between;
-  margin-top: 4em;
-  width: 75%;
+  margin-top: 7em;
+  margin-bottom: 7em;
+  width: 60%;
+  min-width: 260px;
   font-size: 20px;
   // background-color: lime;
 }
@@ -41,7 +44,6 @@
 
 .logo {
   filter: invert(100%);
-  -webkit-filter: invert(100%);
   margin-bottom: 2em;
 }
 
@@ -53,12 +55,19 @@
 }
 
 .name {
+  margin-top: 2em;
   font-size: 2.1em;
   text-align: left;
-  padding: 1em;
   // background-color: aqua;
 }
 
+.title {
+  font-size:24px;
+  color:#F46530;
+  animation: title-color 18s;
+  animation-iteration-count: infinite;
+  transition-timing-function: ease-out;
+}
 
 .triangle-container {
   z-index: -1;
@@ -68,41 +77,72 @@
 	padding-bottom: 50%;
 	vertical-align: middle;
 	overflow: hidden;
-  right: 10%;
-  top: -25px;
+  left: 40%;
+  min-width: 300px;
+  min-height: 300px;
 }
 
 .svg-triangle {
   display: inline-block;
 	position: absolute;
-	top: 0;
+	top: -40px;
 	left: 0;
 }
 
 .tri-top {
   fill: darkred;
-  animation: top-shine 16s;
+  animation: top-shine 18s;
   animation-iteration-count: infinite;
-  transition-timing-function: ease-in-out;
+  transition-timing-function: ease-out;
 }
 
 .tri-btm {
   fill: darkred;
-  animation: bottom-shine 16s;
+  animation: bottom-shine 18s;
   animation-iteration-count: infinite;
-  transition-timing-function: ease-in-out;
+  transition-timing-function: ease-out;
 }
 
+// @keyframes top-shine {
+//   0% {fill: #9c1700;}
+//   20% {fill: #611306;}
+//   60% {fill: #9c1700;}
+//   100% {fill: #9c1700}
+// }
+//
+// @keyframes bottom-shine {
+//   0% {fill: #5e1c10;}
+//   20% {fill: #8f220e;}
+//   60% {fill: #5e1c10;}
+//   100% {fill: #5e1c10}
+// }
+
 @keyframes top-shine {
-  0% {fill: #9c1700;}
-  20% {fill: #611306;}
-  60% {fill: #9c1700;}
-  100% {fill: #9c1700}
+  0% {fill: #84722A;}
+  30% {fill: #84722A}
+  33% {fill: #D4EDF4;}
+  63% {fill: #D4EDF4;}
+  66% {fill: #F46530;}
+  96% {fill: #F46530;}
+  100% {fill: #84722A;}
 }
 
 @keyframes bottom-shine {
-  0% {fill: #5e1c10;}
-  20% {fill: #8f220e;}
-  60% {fill: #5e1c10;}
-  100% {fill: #5e1c10}
+  0% {fill: #FFDE59;}
+  29% {fill: #FFDE59;}
+  32% {fill: #8D9FA4;}
+  62% {fill: #8D9FA4;}
+  65% {fill: #6B2D16;}
+  95% {fill: #6B2D16;}
+  100% {fill: #FFDE59;}
+}
+
+@keyframes title-color {
+  0% {color: #7ED975;}
+  30% {color: #7ED975}
+  33% {color: #F46530;}
+  63% {color: #F46530;}
+  66% {color: #FFDE59;}
+  96% {color: #FFDE59;}
+  100% {color: #7ED975;}
 }
