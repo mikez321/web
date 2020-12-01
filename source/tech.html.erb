@@ -8,6 +8,7 @@
   <div class="info-container">
     <div class="name">
       <strong>Mike Hernandez</strong>
+      <div class="title">Software Developer</div>
       <section id='links'>
         <% link_to 'https://github.com/mikez321' do %>
           <%= image_tag 'iconfinder_Github_381376.png', :id => 'connect-link' %>
@@ -18,28 +19,31 @@
         <a href="mailto:hernandezmichael321@gmail.com">
           <%= image_tag 'iconfinder_112-gmail_email_mail_4202011.png', :id => 'connect-link' %>
         </a>
-        Software Developer | Denver, Colorado
       </section>
     </div>
   </div>
 </section>
 <% tech = {
-  'python' => "I'm a Python developer at ReRent where we're reimagining homesharing.
-    I write raw Python code, and am proficent in Django and Flask.",
-  'ruby' => "With Ruby I learned the concepts of Object Oriented Programming as well
-    as how to test code using Rspec and Minitest.  As far as code in the wild?
-    This website is built in Middleman which uses Ruby to build static sites.",
+  'python' => "I'm currently Python developer at ReRent where we take the stress out of renting
+    your home on Airbnb.",
+  'flask' => "Over 14 days I built a REST API using Flask to power the front end of Oh Crop.",
+  'django' => "ReRent is powered by Python and delivered through Django's
+    MVT framework.",
+  'ruby' => "This website is built with Middleman and Ruby code.",
   'rubyonrails' => "I have built monolith Rails apps, Rails apps that rely on
-    microservices, as well as Rails APIs."
+    microservices, and Rails APIs.",
+  'postgresql' => "Through ActiveRecord, SQLAlchemy, and Django's ORM, Postgres
+    Databases have powered most of my work.",
+  'atom' => "I'm quite happy with Atom as a text editor!"
 } %>
-<% tech.each do |item| %>
-<section id=<%= item.first %>>
+<% tech.each do |tech, desc| %>
+<section id=<%= tech %>>
   <div class="info-container">
     <div class="logo-container">
-      <%= image_tag "https://simpleicons.org/icons/#{item.first}.svg", :class => 'logo' %>
+      <%= image_tag "https://simpleicons.org/icons/#{tech}.svg", :class => 'logo' %>
     </div>
     <div class="lower-text-container">
-      <%= item.last %>
+      <%= desc %>
     </div>
   </div>
 </section>
