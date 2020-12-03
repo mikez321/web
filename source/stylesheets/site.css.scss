@@ -1,10 +1,10 @@
 * {
-  margin-top: 0.4em;
-  margin-bottom: 0.4em;
+  padding-top: 0.4em;
+  padding-bottom: 0.4em;
 }
 
 body {
-  margin: 4%;
+  padding-top: 3%;
   margin-left: 5%;
   margin-right: 5%;
 }
@@ -32,7 +32,7 @@ body {
   display: inline-block;
   padding: 20px;
   float: left;
-  width: 55%;
+  width: 50%;
   // background-color: brown;
 }
 
@@ -41,17 +41,22 @@ body {
   display: inline-block;
   padding: 20px;
   float: left;
-  width: 45%;
+  width: 50%;
   // background-color: yellow;
 }
 
-.links {
+.wide-banner {
   text-align: center;
   display: inline-block;
   box-sizing: border-box;
   padding: 20px;
   width: 100%;
-  // background-color: purple;
+  // background-color: black;
+}
+
+.banner-text {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 1.5vw;
 }
 
 .left-bottom {
@@ -59,7 +64,7 @@ body {
   display: inline-block;
   padding: 20px;
   float: left;
-  width: 60%;
+  width: 65%;
   // background-color: orange;
 }
 
@@ -68,8 +73,21 @@ body {
   display: inline-block;
   padding: 20px;
   float: left;
-  width: 40%;
+  width: 35%;
   // background-color: gray;
+}
+
+.bottom-signature {
+  box-sizing: border-box;
+  display: inline-block;
+  padding: 20px;
+  padding-top: 40px;
+  float: left;
+  width: 100%;
+  text-align: center;
+  font-family: 'Lato', monospace;
+  font-size: 1.1vw;
+  // background-color: tan;
 }
 
 @media screen and (max-width: 800px) {
@@ -86,14 +104,34 @@ body {
 .title {
   text-align: center;
   font-family: 'Major Mono Display', monospace;
-  // font-family: 'Lato', monospace;
   font-size: 3vw
 }
 
 .info {
   text-align: right;
   font-family: 'Lato', monospace;
-  font-size: 2vw;
+  font-size: 2.7vw;
+}
+
+.mid-info-l {
+  padding-top: 1.5em;
+  text-align: right;
+  font-family: 'Lato', monospace;
+  font-size: 3vw;
+}
+
+.mid-info-r-title {
+  text-align: center;
+  font-family: 'Paytone One', sans-serif;
+  font-size:6vw;
+  // background-color: red;
+}
+
+.mid-info-r {
+  // padding-top: 1.5em;
+  text-align: justify;
+  font-family: 'Major Mono Display', monospace;
+  font-size: 1.5vw;
 }
 
 .links {
@@ -102,6 +140,13 @@ body {
 }
 
 .connect {
+  text-align: left;
   font-family: 'Alfa Slab One', cursive;
   font-size: 5vw;
+}
+
+.connect-links {
+  text-align: left;
+  font-family: 'Rokkitt', serif;
+  font-size:5vw;
 }
