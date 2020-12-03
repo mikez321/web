@@ -1,146 +1,107 @@
-:root {
-  --background: #2a2e30;
-  --light-text: #d4def4;
-  --dark-yellow: #84722A;
-  --light-yellow: #FFDE59;
-  --dark-gray: #8D9FA4;
-  --light-gray: #D4EDF4;
-  --dark-red: #6B2D16;
-  --light-red: #F46530;
-  --light-green: #7ED975;
+* {
+  margin-top: 0.4em;
+  margin-bottom: 0.4em;
 }
 
-#bg {
-  background-color: var(--background);
+body {
+  margin: 4%;
+  margin-left: 5%;
+  margin-right: 5%;
 }
 
+.left-upper {
+  box-sizing: border-box;
+  display: inline-block;
+  padding: 20px;
+  float: left;
+  width: 55%;
+  // background-color: skyblue;
+}
 
-#links {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 7em;
-  margin-bottom: 7em;
+.right-upper {
+  box-sizing: border-box;
+  display: inline-block;
+  padding: 20px;
+  float: left;
+  width: 45%;
+  // background-color: green;
+}
+
+.left-middle {
+  box-sizing: border-box;
+  display: inline-block;
+  padding: 20px;
+  float: left;
+  width: 55%;
+  // background-color: brown;
+}
+
+.right-middle {
+  box-sizing: border-box;
+  display: inline-block;
+  padding: 20px;
+  float: left;
+  width: 45%;
+  // background-color: yellow;
+}
+
+.links {
+  text-align: center;
+  display: inline-block;
+  box-sizing: border-box;
+  padding: 20px;
+  width: 100%;
+  // background-color: purple;
+}
+
+.left-bottom {
+  box-sizing: border-box;
+  display: inline-block;
+  padding: 20px;
+  float: left;
   width: 60%;
-  min-width: 260px;
-  font-size: 20px;
-  // background-color: lime;
+  // background-color: orange;
 }
 
-#connect-link {
-  top: 70%;
-  width: 30px;
-  height: auto;
-  filter: brightness(80%);
-  transition: 0.8s;
+.right-bottom {
+  box-sizing: border-box;
+  display: inline-block;
+  padding: 20px;
+  float: left;
+  width: 40%;
+  // background-color: gray;
+}
 
-  &:hover {
-    filter: brightness(110%);
-    transform: scale(1.3);
+@media screen and (max-width: 800px) {
+  .left-upper, .right-upper, .left-lower, .right-lower, .links {
+    width: 100%;
   }
 }
 
-.info-container {
-  padding: 10%;
-  font-size: 24px;
-  color: var(--light-text);
-  font-family: 'Lato', sans-serif;
-  // background-color: lightblue;
-}
-
-.logo-container {
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  // background-color: pink;
-}
-
-.logo {
-  filter: invert(100%);
-  margin-bottom: 2em;
-}
-
-.lower-text-container {
-  text-align: center;
-  display: block;
-  margin-top: 2em;
-  // background-color: lime;
-}
-
 .name {
-  margin-top: 2em;
-  font-size: 2.1em;
-  text-align: left;
-  // background-color: aqua;
+  font-family: 'Major Mono Display', monospace;
+  font-size: 10vw;
 }
 
 .title {
-  font-size:24px;
-  color: var(--light-yellow);
-  animation: title-color 18s;
-  animation-iteration-count: infinite;
-  transition-timing-function: ease-out;
+  text-align: center;
+  font-family: 'Major Mono Display', monospace;
+  // font-family: 'Lato', monospace;
+  font-size: 3vw
 }
 
-.triangle-container {
-  z-index: -1;
-	position: absolute;
-  display: flex;
-	width: 40%;
-	padding-bottom: 50%;
-	vertical-align: middle;
-	overflow: hidden;
-  left: 40%;
-  min-width: 300px;
-  min-height: 300px;
+.info {
+  text-align: right;
+  font-family: 'Lato', monospace;
+  font-size: 2vw;
 }
 
-.svg-triangle {
-  display: inline-block;
-	position: absolute;
-	top: -40px;
-	left: 0;
+.links {
+  font-family: 'Lato', monospace;
+  font-size: 1vw;
 }
 
-.tri-top {
-  fill: darkred;
-  animation: top-shine 18s;
-  animation-iteration-count: infinite;
-  transition-timing-function: ease-out;
-}
-
-.tri-btm {
-  fill: darkred;
-  animation: bottom-shine 18s;
-  animation-iteration-count: infinite;
-  transition-timing-function: ease-out;
-}
-
-@keyframes top-shine {
-  0% {fill: var(--dark-yellow);}
-  30% {fill: var(--dark-yellow);}
-  33% {fill: var(--light-gray);}
-  63% {fill: var(--light-gray);}
-  66% {fill: var(--light-red);}
-  96% {fill: var(--light-red);}
-  100% {fill: var(--dark-yellow);}
-}
-
-@keyframes bottom-shine {
-  0% {fill: var(--light-yellow);}
-  29% {fill: var(--light-yellow);}
-  32% {fill: var(--dark-gray);}
-  62% {fill: var(--dark-gray);}
-  65% {fill: var(--dark-red);}
-  95% {fill: var(--dark-red);}
-  100% {fill: var(--light-yellow);}
-}
-
-@keyframes title-color {
-  0% {color: var(--light-green);}
-  30% {color: var(--light-green)}
-  33% {color: var(--light-red);}
-  63% {color: var(--light-red);}
-  66% {color: var(--light-yellow);}
-  96% {color: var(--light-yellow);}
-  100% {color: var(--light-green);}
+.connect {
+  font-family: 'Alfa Slab One', cursive;
+  font-size: 5vw;
 }
