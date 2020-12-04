@@ -44,7 +44,5 @@ page '/*.txt', layout: false
 configure :build do
   config[:build_dir] = '/Users/mike/turing/mod5/site/build'
 end
-# configure :build do
-#   activate :minify_css
-#   activate :minify_javascript
-# end
+
+activate :directory_indexes  #Removes .html from file

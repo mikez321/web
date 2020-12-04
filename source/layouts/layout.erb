@@ -6,13 +6,18 @@
     <meta name="viewport"
           content="width=device-width, initial-scale=1">
     <!-- Use the title from a page's frontmatter if it has one -->
-    <title><%= current_page.data.title || "M Hernandez" %></title>
+    <title><%= current_page.data.title || "Mike Hernandez" %></title>
     <%= stylesheet_link_tag "site" %>
     <%= javascript_include_tag "site" %>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rokkitt&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Paytone+One&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@1,100&display=swap" rel="stylesheet">
   </head>
-  <body id='bg'>
+  <body>
     <%= yield %>
   </body>
 </html>
