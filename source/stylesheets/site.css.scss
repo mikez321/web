@@ -7,6 +7,8 @@ body {
   padding-top: 3%;
   margin-left: 5%;
   margin-right: 5%;
+  background-color: mediumblue;
+  color: white;
 }
 
 .left-upper {
@@ -63,8 +65,9 @@ body {
   box-sizing: border-box;
   display: inline-block;
   padding: 20px;
+  padding-right: 0;
   float: left;
-  width: 65%;
+  width: 60%;
   // background-color: orange;
 }
 
@@ -73,7 +76,7 @@ body {
   display: inline-block;
   padding: 20px;
   float: left;
-  width: 35%;
+  width: 40%;
   // background-color: gray;
 }
 
@@ -81,7 +84,7 @@ body {
   box-sizing: border-box;
   display: inline-block;
   padding: 20px;
-  padding-top: 40px;
+  margin-top: 40px;
   float: left;
   width: 100%;
   text-align: center;
@@ -98,7 +101,7 @@ body {
 
 .name {
   font-family: 'Major Mono Display', monospace;
-  font-size: 10vw;
+  font-size: 11vw;
 }
 
 .title {
@@ -145,8 +148,21 @@ body {
   font-size: 5vw;
 }
 
-.connect-links {
+.connect-link {
+  display: block;
+  padding: 0;
   text-align: left;
   font-family: 'Rokkitt', serif;
   font-size:5vw;
+  margin: 5px;
+}
+
+.connect-link:hover {
+  text-decoration: underline;
+  text-decoration-style: wavy;
+}
+
+a {
+  color: white;
+  text-decoration: none;
 }
