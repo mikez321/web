@@ -1,3 +1,10 @@
+:root {
+  --bg-color: mediumblue;
+  --text-color: white;
+  --text-color-alt-1: white;
+  --text-color-alt-2: white;
+}
+
 * {
   padding-top: 0.4em;
   padding-bottom: 0.4em;
@@ -7,8 +14,8 @@ body {
   padding-top: 3%;
   margin-left: 5%;
   margin-right: 5%;
-  background-color: mediumblue;
-  color: white;
+  background-color: var(--bg-color);
+  color: var(--text-color);
 }
 
 .left-upper {
@@ -59,6 +66,7 @@ body {
 .banner-text {
   font-family: 'IBM Plex Mono', monospace;
   font-size: 1.5vw;
+  color: var(--text-color-alt-1);
 }
 
 .left-bottom {
@@ -107,13 +115,15 @@ body {
 .title {
   text-align: center;
   font-family: 'Major Mono Display', monospace;
-  font-size: 3vw
+  font-size: 3vw;
+  color: var(--text-color-alt-1);
 }
 
 .info {
   text-align: right;
   font-family: 'Lato', monospace;
   font-size: 2.7vw;
+  color: var(--text-color-alt-2)
 }
 
 .mid-info-l {
@@ -121,6 +131,7 @@ body {
   text-align: right;
   font-family: 'Lato', monospace;
   font-size: 3vw;
+  color: var(--text-color-alt-2)
 }
 
 .mid-info-r-title {
@@ -135,11 +146,7 @@ body {
   text-align: justify;
   font-family: 'Major Mono Display', monospace;
   font-size: 1.5vw;
-}
-
-.links {
-  font-family: 'Lato', monospace;
-  font-size: 1vw;
+  color: var(--text-color-alt-1);
 }
 
 .connect {
@@ -163,6 +170,6 @@ body {
 }
 
 a {
-  color: white;
+  color: var(--text-color);
   text-decoration: none;
 }
