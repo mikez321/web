@@ -1,13 +1,22 @@
 :root {
-  --bg-color: mediumblue;
+  --bg-color: black;
   --text-color: white;
-  --text-color-alt-1: white;
+  --text-color-alt-1: red;
   --text-color-alt-2: white;
 }
 
 * {
   padding-top: 0.4em;
   padding-bottom: 0.4em;
+}
+
+.emphasize-1 {
+  text-shadow: 0em 0em red;
+  text-shadow: -0.2em 0.69em var(--text-color-alt-1);
+}
+
+.text {
+  color: white;
 }
 
 body {
@@ -60,13 +69,13 @@ body {
   box-sizing: border-box;
   padding: 20px;
   width: 100%;
-  // background-color: black;
+  // background-color: var(--text-color-alt-1);
 }
 
 .banner-text {
   font-family: 'IBM Plex Mono', monospace;
   font-size: 1.5vw;
-  color: var(--text-color-alt-1);
+  // color: var(--text-color);
 }
 
 .left-bottom {
@@ -97,7 +106,7 @@ body {
   width: 100%;
   text-align: center;
   font-family: 'Lato', monospace;
-  font-size: 1.1vw;
+  font-size: 1.3vw;
   // background-color: tan;
 }
 
@@ -110,28 +119,31 @@ body {
 .name {
   font-family: 'Major Mono Display', monospace;
   font-size: 11vw;
+  color: var(--text-color-alt-2);
 }
 
 .title {
   text-align: center;
   font-family: 'Major Mono Display', monospace;
   font-size: 3vw;
-  color: var(--text-color-alt-1);
+  color: var(--text-color-alt-2);
 }
 
 .info {
   text-align: right;
   font-family: 'Lato', monospace;
   font-size: 2.7vw;
-  color: var(--text-color-alt-2)
+  color: var(--text-color);
+  // background-color: var(--text-color-alt-1);
+  padding: 20px;
 }
 
 .mid-info-l {
-  padding-top: 1.5em;
+  padding-top: 1.7em;
   text-align: right;
   font-family: 'Lato', monospace;
   font-size: 3vw;
-  color: var(--text-color-alt-2)
+  color: var(--text-color)
 }
 
 .mid-info-r-title {
@@ -146,7 +158,7 @@ body {
   text-align: justify;
   font-family: 'Major Mono Display', monospace;
   font-size: 1.5vw;
-  color: var(--text-color-alt-1);
+  color: var(--text-color);
 }
 
 .connect {
