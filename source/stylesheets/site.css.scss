@@ -1,7 +1,7 @@
 :root {
   --bg-color: black;
   --text-color: white;
-  --text-color-alt-1: red;
+  --text-color-alt-1: dodgerblue;
   --text-color-alt-2: white;
 }
 
@@ -114,6 +114,16 @@ body {
   .left-upper, .right-upper, .left-lower, .right-lower, .links {
     width: 100%;
   }
+
+  body {
+    margin: 0;
+    padding: 0;
+  }
+
+  .info {
+    text-decoration: underline;
+    text-decoration-color: var(--text-color-alt-1)
+  }
 }
 
 .name {
@@ -139,7 +149,7 @@ body {
 }
 
 .mid-info-l {
-  padding-top: 1.7em;
+  padding-top: 2.5em;
   text-align: right;
   font-family: 'Lato', monospace;
   font-size: 3vw;
