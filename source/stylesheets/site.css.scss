@@ -1,8 +1,10 @@
 :root {
   --bg-color: #282828;
   --text-color: white;
-  --text-color-alt-1: dodgerblue;
+  --text-color-alt-1: red;
   --text-color-alt-2: white;
+  --text-shadow-1: red;
+  --text-shadow-2: orange;
 }
 
 * {
@@ -11,7 +13,11 @@
 }
 
 .emphasize-1 {
-  text-shadow: -0.2em 0.69em aqua;
+  text-shadow: -0.7em 1em var(--text-shadow-1);
+}
+
+.emphasize-2 {
+  text-shadow: 0.2em 0.39em var(--text-shadow-2);
 }
 
 body {
