@@ -7,19 +7,6 @@
   --text-shadow-2: orange;
 }
 
-* {
-  padding-top: 0.4em;
-  padding-bottom: 0.4em;
-}
-
-.emphasize-1 {
-  text-shadow: -0.7em 1em var(--text-shadow-1);
-}
-
-.emphasize-2 {
-  text-shadow: 0.2em 0.39em var(--text-shadow-2);
-}
-
 body {
   padding-top: 3%;
   margin-left: 5%;
@@ -34,6 +21,8 @@ body {
   padding: 20px;
   float: left;
   width: 55%;
+  margin-top: 0.4em;
+  margin-bottom: 0.4em;
   // background-color: skyblue;
 }
 
@@ -43,6 +32,8 @@ body {
   padding: 20px;
   float: left;
   width: 45%;
+  margin-top: 0.4em;
+  margin-bottom: 0.4em;
   // background-color: green;
 }
 
@@ -52,6 +43,8 @@ body {
   padding: 20px;
   float: left;
   width: 50%;
+  margin-top: 0.4em;
+  margin-bottom: 0.4em;
   // background-color: brown;
 }
 
@@ -61,6 +54,8 @@ body {
   padding: 20px;
   float: left;
   width: 50%;
+  margin-top: 0.4em;
+  margin-bottom: 0.4em;
   // background-color: yellow;
 }
 
@@ -70,13 +65,17 @@ body {
   box-sizing: border-box;
   padding: 20px;
   width: 100%;
+  margin-top: 0.4em;
+  margin-bottom: 0.4em;
   // background-color: var(--text-color-alt-1);
 }
 
 .banner-text {
   font-family: 'IBM Plex Mono', monospace;
   font-size: 1.5vw;
-  // color: var(--text-color);
+  color: var(--text-color);
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
 }
 
 .left-bottom {
@@ -86,6 +85,8 @@ body {
   padding-right: 0;
   float: left;
   width: 60%;
+  margin-top: 0.4em;
+  margin-bottom: 0.4em;
   // background-color: orange;
 }
 
@@ -95,6 +96,8 @@ body {
   padding: 20px;
   float: left;
   width: 40%;
+  margin-top: 0.4em;
+  margin-bottom: 0.4em;
   // background-color: gray;
 }
 
@@ -105,6 +108,8 @@ body {
   margin-top: 40px;
   float: left;
   width: 100%;
+  margin-top: 0.4em;
+  margin-bottom: 0.4em;
   text-align: center;
   font-family: 'Lato', monospace;
   font-size: 1.3vw;
@@ -131,6 +136,8 @@ body {
   font-family: 'Major Mono Display', monospace;
   font-size: 11vw;
   color: var(--text-color-alt-2);
+  text-shadow: 5px 10px 0 orange, 20px -3px 0 red;
+  transition: 800ms;
 }
 
 .title {
@@ -150,7 +157,7 @@ body {
 }
 
 .mid-info-l {
-  padding-top: 2.5em;
+  padding-top: 1.5em;
   text-align: right;
   font-family: 'Lato', monospace;
   font-size: 3vw;
@@ -192,12 +199,20 @@ body {
   text-decoration-style: wavy;
 }
 
+.emphasize-1 {
+  text-shadow: -0.7em 1em var(--text-shadow-1);
+}
+
+.emphasize-2 {
+  text-shadow: 0.2em 0.39em var(--text-shadow-2);
+}
+
 a {
   color: var(--text-color);
   text-decoration: none;
 }
 
 .trackable {
-  min-height:100vh;
-  // background-color:gray;
+  min-height: 100%;
+  // background-color: gray;
 }
