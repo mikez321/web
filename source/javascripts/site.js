@@ -2,6 +2,8 @@
 const trackable = document.querySelector('.trackable')
 const name = document.querySelector('.name')
 const movement = 50
+const color1 = "red"
+const color2 = "orange"
 
 function shadow(e) {
   const { offsetWidth: width, offsetHeight: height } = trackable
@@ -15,8 +17,8 @@ function shadow(e) {
   const yMovement = Math.round((y / width * movement) - (movement / 2))
 
   name.style.textShadow = `
-    ${xMovement}px ${yMovement}px 0 orange,
-    ${xMovement + 25 }px ${yMovement * -1 + 25}px 0 red`
+    ${xMovement}px ${yMovement}px 0 ${color2},
+    ${xMovement + 25 }px ${yMovement * -1 + 25}px 0 ${color1}`
 }
 
 trackable.addEventListener('mousemove', shadow)
